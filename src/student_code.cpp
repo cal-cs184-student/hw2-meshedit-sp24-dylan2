@@ -15,8 +15,18 @@ namespace CGL
    */
   std::vector<Vector2D> BezierCurve::evaluateStep(std::vector<Vector2D> const &points)
   { 
-    // TODO Part 1.
-    return std::vector<Vector2D>();
+      // TODO Part 1.
+      // must use evaluatedLevels / control points to track level for recursiveness
+      std::vector<Vector2D> currLevel;
+
+      for (int i = 0; i < points.size() - 1; ++i) {
+          Vector2D pointNew = (1 - this->t)*points[i] + points[i+1] * this->t;
+          currLevel.push_back(pointNew);
+      }
+      
+      // return std::vector<Vector2D>();
+      return currLevel;
+      
   }
 
   /**
