@@ -40,7 +40,16 @@ namespace CGL
   std::vector<Vector3D> BezierPatch::evaluateStep(std::vector<Vector3D> const &points, double t) const
   {
     // TODO Part 2.
-    return std::vector<Vector3D>();
+      std::vector<Vector3D> currLevel;
+
+      for (int i = 0; i < points.size() - 1; ++i) {
+          Vector3D pointNew = (1 - t)*points[i] + points[i+1] * t;
+          currLevel.push_back(pointNew);
+      }
+      
+      // return std::vector<Vector2D>();
+      return currLevel;
+    // return std::vector<Vector3D>();
   }
 
   /**
@@ -53,7 +62,21 @@ namespace CGL
   Vector3D BezierPatch::evaluate1D(std::vector<Vector3D> const &points, double t) const
   {
     // TODO Part 2.
-    return Vector3D();
+      // stop recursion when points is on final level (point.size() = 1)
+      if (points.size() == 1) {
+          return points[0];
+      }
+      
+      std::vector<Vector3D> currLevel;
+
+      for (int i = 0; i < points.size() - 1; ++i) {
+          Vector3D curveNew = (1 - t)*points[i] + points[i+1] * t;
+          currLevel.push_back(curveNew);
+      }
+      
+      // return std::vector<Vector2D>();
+      return this->evaluate1D(currLevel, t);
+    // return Vector3D();
   }
 
   /**
@@ -66,7 +89,18 @@ namespace CGL
   Vector3D BezierPatch::evaluate(double u, double v) const 
   {  
     // TODO Part 2.
-    return Vector3D();
+      // must utilize class variable control points
+      std::vector<Vector3D> bezCurve;
+      // vector<Vector3D> contPoints = this->controlPoints;
+
+      for (int i = 0; i < this->controlPoints.size() - 1; ++i) {
+          Vector3D curveNew = this->evaluate1D(this->controlPoints[i], u);
+          bezCurve.push_back(curveNew);
+      }
+      
+      // return std::vector<Vector2D>();
+      return this->evaluate1D(bezCurve, v);
+    // return Vector3D();
   }
 
   Vector3D Vertex::normal( void ) const
