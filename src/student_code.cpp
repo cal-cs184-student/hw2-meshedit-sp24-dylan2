@@ -47,7 +47,6 @@ namespace CGL
           currLevel.push_back(pointNew);
       }
       
-      // return std::vector<Vector2D>();
       return currLevel;
     // return std::vector<Vector3D>();
   }
@@ -93,7 +92,7 @@ namespace CGL
       std::vector<Vector3D> bezCurve;
       // vector<Vector3D> contPoints = this->controlPoints;
 
-      for (int i = 0; i < this->controlPoints.size() - 1; ++i) {
+      for (int i = 0; i < this->controlPoints.size(); ++i) {
           Vector3D curveNew = this->evaluate1D(this->controlPoints[i], u);
           bezCurve.push_back(curveNew);
       }
@@ -105,11 +104,27 @@ namespace CGL
 
   Vector3D Vertex::normal( void ) const
   {
-    // TODO Part 3.
-    // Returns an approximate unit normal at this vertex, computed by
-    // taking the area-weighted average of the normals of neighboring
-    // triangles, then normalizing.
-    return Vector3D();
+      // TODO Part 3.
+      // Returns an approximate unit normal at this vertex, computed by
+      // taking the area-weighted average of the normals of neighboring
+      // triangles, then normalizing.
+      // face in halfedgemesh.h has example, follow roughly
+      // use HalfedgeCIter per hint
+      
+      Vector3D norm(0., 0., 0.);
+      HalfedgeCIter h = halfedge();
+      
+      do {
+          Vector3D iPos = h->vertex()->position;
+          Vector3D jPos = h->next()->vertex()->position;
+          
+          norm += cross(iPos, jPos);
+          h = h->next();
+          
+      } while (h != halfedge());
+      
+      // .unit() returns unit vector
+      return norm.unit();
   }
 
   EdgeIter HalfedgeMesh::flipEdge( EdgeIter e0 )
