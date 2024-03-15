@@ -129,9 +129,77 @@ namespace CGL
 
   EdgeIter HalfedgeMesh::flipEdge( EdgeIter e0 )
   {
-    // TODO Part 4.
-    // This method should flip the given edge and return an iterator to the flipped edge.
-    return EdgeIter();
+      // TODO Part 4.
+      // This method should flip the given edge and return an iterator to the flipped edge.
+      // 5 edges, 10 half edges, 4 vertices
+      // method to follow from hints:
+      // define all elemenets from e0, then make new mesh of flipped edge
+      // half edge points to twin, next, vertex, edge, face
+      // vertex points to point, halfedge
+      // edge points to half edge
+      // face points to half edge
+      // Following provided template for edge flipping: 15462.courses.cs.cmu.edu/fall2015content/misc/HalfedgeEdgeOpImplementationGuide.pdf
+      // guide was found from provided supplementary notes
+      
+      // set initial mesh
+      HalfedgeIter h0 = e0->halfedge();
+      HalfedgeIter h1 = h0->next();
+      HalfedgeIter h2 = h1->next();
+      HalfedgeIter h3 = h0->twin();
+      HalfedgeIter h4 = h3->next();
+      HalfedgeIter h5 = h4->next();
+      HalfedgeIter h6 = h1->twin();
+      HalfedgeIter h7 = h2->twin();
+      HalfedgeIter h8 = h4->twin();
+      HalfedgeIter h9 = h5->twin();
+      
+      VertexIter v0 = h0->vertex();
+      VertexIter v1 = h3->vertex();
+      VertexIter v2 = h2->vertex();
+      VertexIter v3 = h5->vertex();
+      
+      EdgeIter e1 = h1->edge();
+      EdgeIter e2 = h2->edge();
+      EdgeIter e3 = h4->edge();
+      EdgeIter e4 = h5->edge();
+      
+      FaceIter f0 = h0->face();
+      FaceIter f1 = h3->face();
+      
+      // check for boundary edges, check inside half edges, can't flip boundary
+      if (h0->isBoundary() || h1->isBoundary() || h2->isBoundary() || h3->isBoundary() || h4->isBoundary() || h5->isBoundary()) {
+          return e0;
+      }
+      
+      // reassign everything, use setNeighbors for halfedges: next, twin, vertex, edge, face
+      // do not assign next or face for outside half edges
+      
+      h0->setNeighbors(h1, h3, v3, e0, f0);
+      h1->setNeighbors(h2, h7, v2, e2, f0);
+      h2->setNeighbors(h0, h8, v0, e3, f0);
+      h3->setNeighbors(h4, h0, v2, e0, f1);
+      h4->setNeighbors(h5, h9, v3, e4, f1);
+      h5->setNeighbors(h3, h6, v1, e1, f1);
+      h6->setNeighbors(h6->next(), h5, v2, e1, h6->face());
+      h7->setNeighbors(h7->next(), h1, v0, e2, h7->face());
+      h8->setNeighbors(h8->next(), h2, v3, e3, h8->face());
+      h9->setNeighbors(h9->next(), h4, v1, e4, h9->face());
+      
+      v0->halfedge() = h2;
+      v1->halfedge() = h5;
+      v2->halfedge() = h3;
+      v3->halfedge() = h0;
+      
+      e0->halfedge() = h0;
+      e1->halfedge() = h5;
+      e2->halfedge() = h1;
+      e3->halfedge() = h2;
+      e4->halfedge() = h4;
+      
+      f0->halfedge() = h0;
+      f1->halfedge() = h3;
+      
+      return e0;
   }
 
   VertexIter HalfedgeMesh::splitEdge( EdgeIter e0 )
