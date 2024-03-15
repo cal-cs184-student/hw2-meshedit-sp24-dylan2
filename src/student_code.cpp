@@ -204,10 +204,48 @@ namespace CGL
 
   VertexIter HalfedgeMesh::splitEdge( EdgeIter e0 )
   {
-    // TODO Part 5.
-    // This method should split the given edge and return an iterator to the newly inserted vertex.
-    // The halfedge of this vertex should point along the edge that was split, rather than the new edges.
-    return VertexIter();
+      // TODO Part 5.
+      // This method should split the given edge and return an iterator to the newly inserted vertex.
+      // The halfedge of this vertex should point along the edge that was split, rather than the new edges.
+      // 1 new vertex, 2 new faces, 3 new edges, more pointers
+      
+      // reuse original assignment as from flipEdge()
+      HalfedgeIter h0 = e0->halfedge();
+      HalfedgeIter h1 = h0->next();
+      HalfedgeIter h2 = h1->next();
+      HalfedgeIter h3 = h0->twin();
+      HalfedgeIter h4 = h3->next();
+      HalfedgeIter h5 = h4->next();
+      HalfedgeIter h6 = h1->twin();
+      HalfedgeIter h7 = h2->twin();
+      HalfedgeIter h8 = h4->twin();
+      HalfedgeIter h9 = h5->twin();
+      
+      VertexIter v0 = h0->vertex();
+      VertexIter v1 = h3->vertex();
+      VertexIter v2 = h2->vertex();
+      VertexIter v3 = h5->vertex();
+      
+      EdgeIter e1 = h1->edge();
+      EdgeIter e2 = h2->edge();
+      EdgeIter e3 = h4->edge();
+      EdgeIter e4 = h5->edge();
+      
+      FaceIter f0 = h0->face();
+      FaceIter f1 = h3->face();
+      
+      // check for boundary edges, check inside half edges, can't split boundary
+      if (h0->isBoundary() || h1->isBoundary() || h2->isBoundary() || h3->isBoundary() || h4->isBoundary() || h5->isBoundary()) {
+          return e0->halfedge()->vertex();
+      }
+      
+      // create new elements
+      HalfedgeIter h10, h11, h12, h13, h14, h15;
+      VertexIter v4;
+      EdgeIter e5, e6, e7;
+      FaceIter f2, f3;
+      
+      return e0->halfedge()->vertex();
   }
 
 

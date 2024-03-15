@@ -1,0 +1,1973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1C56F5DC3F8041CD9A6675BF /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7B17175E92E04CE094BEA537 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				BD9B62B888FE10B29A5036D7 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				52FF8F4B2BEF43688B403F67 /* PBXTargetDependency */,
+				4FF33862B3AF4CC7B17BABEE /* PBXTargetDependency */,
+				02BA6BFA8ACC4203B0884167 /* PBXTargetDependency */,
+				B8C7F4041A1444FC81EA1B7C /* PBXTargetDependency */,
+				DB47FF85C7B443149BA3F7F1 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		74CC3BC11AB44290A19AB700 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DE3044FAD5214E88A763A737 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				052134EEAF5A4C83A5C96B45 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		893F69EC9A814C759B07B341 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D3A7D5508E1847C28A781DBD /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				DE853A0660C6A17320892410 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		F88210E1D39D47F7BBEA9121 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 761DDF12CE544271BFA6EF4D /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				B3787E44D7CBA95DC1DA2051 /* Generate CGL/deps/glfw/CMakeFiles/uninstall */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00E866A3CACF4D7A80CB437E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.h */ = {isa = PBXBuildFile; fileRef = 3A447937EC6849ECB6BCEFC7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.h */; };
+		00EC314700A145568AA1653E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.h */ = {isa = PBXBuildFile; fileRef = 0108C23ACD594BC5907A6C1A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.h */; };
+		08096594D5B54064A845D83A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 007465B40E0649BEAB35268E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.h */; };
+		0DF654A499A94CFA8687EB53 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.h */ = {isa = PBXBuildFile; fileRef = 93018952431F49EAA2301728 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.h */; };
+		1112D9F50EE24F66AFE7B2BD /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXBuildFile; fileRef = E1135421D90E4291A0EB53D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glewinfo.c */; };
+		12DA88B5FED548899E3EF4C7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.h */ = {isa = PBXBuildFile; fileRef = 4B26577103084B9CAC1167C4 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.h */; };
+		14915A9FB9604071B82E4969 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 601A83167F2A460182A3DEC8 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Cocoa.framework */; };
+		15DE90C9320A4BD99C4BA15A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = 1CD0278F02024A7C832150D0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/internal.h */; };
+		165B2A0D5AF24D4EAC21079C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 16CA5C87A493423C81FBF2A6 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3native.h */; };
+		18FB0EB72B594BC59FA7878E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.cpp */ = {isa = PBXBuildFile; fileRef = AC0AF13A5CCA480EA93A17BB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.cpp */; };
+		1B0A276DC37546BC8D74B83C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.h */ = {isa = PBXBuildFile; fileRef = 759E0DFC932042D6B85F01D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.h */; };
+		1FF806E2083344499F265BB8 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.cpp */ = {isa = PBXBuildFile; fileRef = 413EFC7F393C4273BC65BBA0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.cpp */; };
+		21747993DD744EE981CC140E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.h */ = {isa = PBXBuildFile; fileRef = 1234AA4763384971936C93E0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.h */; };
+		2A585BF22D254D24AE1BCE35 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.cpp */ = {isa = PBXBuildFile; fileRef = B9A1B6450A8A431BB8BC58EC /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.cpp */; };
+		30001FABD1354DF9B587C71F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.h */ = {isa = PBXBuildFile; fileRef = 3D7B6D1D0184406EA720F797 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.h */; };
+		31394DF405C441EC8E0112C6 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.cpp */ = {isa = PBXBuildFile; fileRef = 352B784B4BC44396877B71D9 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.cpp */; };
+		3E9406AA1A604188B870A68F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.cpp */ = {isa = PBXBuildFile; fileRef = 75F5067D20924B52974A5DA3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.cpp */; };
+		3EEC198B4A134C12B19F5384 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = C10B4D7C82974F19893A1697 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_monitor.m */; };
+		4283551010EE460683532E5B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.cpp */ = {isa = PBXBuildFile; fileRef = A6F17476895249BD84855A3E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.cpp */; };
+		44CE96AACDCD4B46ABA920D0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = 7F7A865C02AC4FB2A3E8E06B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.cpp */; };
+		4E493EF7F0474482B9FE008D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.h */ = {isa = PBXBuildFile; fileRef = E9CB708ADC0548A0B3E7BE76 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.h */; };
+		4EA05C1F88674E768ABACE27 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.cpp */ = {isa = PBXBuildFile; fileRef = 30A7622BB976455EA7F66409 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.cpp */; };
+		4F53D57767614425A8F314C2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.cpp */ = {isa = PBXBuildFile; fileRef = E95AD1436FE947B9A8966A80 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.cpp */; };
+		4F81248EF320491D8609EE5D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.h */ = {isa = PBXBuildFile; fileRef = E141D57730A1417DA8AF2D88 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.h */; };
+		5317927DF0A84C6E92A25585 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.cpp */ = {isa = PBXBuildFile; fileRef = C500347227DE4924BE6BE717 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.cpp */; };
+		538FB6F45CF34F36A7C29D59 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DADD45639B0A45BE860D0651 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/CMakeLists.txt */; };
+		54960B8E702041FF81ECB3A0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 8EBD125723214E9A875DBF1A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/glfw_config.h */; };
+		56256E98208D49299FB5FE46 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXBuildFile; fileRef = 08095D6C6EA9410B99AB89CD /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreVideo.framework */; };
+		5707483FD44B40A59AD2364F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/main.cpp */ = {isa = PBXBuildFile; fileRef = A40BBB43C52748D3BB9677B8 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/main.cpp */; };
+		59228BDE254145B1B107990B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework */ = {isa = PBXBuildFile; fileRef = 489F702F81674C459DED1435 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework */; };
+		5B09C567D62A40278A48858F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.cpp */ = {isa = PBXBuildFile; fileRef = 0B901270917649088C200B9E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.cpp */; };
+		5C11CB136A454ECB8EA0BA7F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.h */ = {isa = PBXBuildFile; fileRef = 8A7A9AAC47DC446EAF1BA8A5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.h */; };
+		5D723825A4F747D9967B3810 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.cpp */ = {isa = PBXBuildFile; fileRef = 5874A5CCD58043DEA2744C0A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.cpp */; };
+		6074EE3840914AEEB8ABE45C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.h */ = {isa = PBXBuildFile; fileRef = 605C3C697EE94FB3A34AA703 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.h */; };
+		61F44A4959CA4DA48E25F08B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.h */ = {isa = PBXBuildFile; fileRef = 5281599BCC16449280B7925E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.h */; };
+		6303B1A4E38E48CF87E3F9AD /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.h */ = {isa = PBXBuildFile; fileRef = 5709EACC5E5B43CEBB55B054 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.h */; };
+		6727FA9AB555405DBC051526 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 61BB2BCEB9D14CBC954CF491 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/window.c */; };
+		67C3DD9D6782416BA7BA252D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.cpp */ = {isa = PBXBuildFile; fileRef = 70BA189410444262A5113142 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.cpp */; };
+		6CB6D8542D3A4A69A4A37DB3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.cpp */ = {isa = PBXBuildFile; fileRef = FE58085750A54216B278917A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.cpp */; };
+		72EDA0B52B054057A9EBD2B3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glew.c */ = {isa = PBXBuildFile; fileRef = 4753D75660C9483A9EEEF705 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glew.c */; };
+		742A30EB72774DBC86462D70 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.cpp */ = {isa = PBXBuildFile; fileRef = A0DC03F368544256ACBA856A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.cpp */; };
+		74AC7C47D8C64B8E9CF62CF1 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.h */ = {isa = PBXBuildFile; fileRef = 71B39F299ADF4D079CE82D41 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.h */; };
+		7BCA058D03DE45619EB2BD50 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.h */ = {isa = PBXBuildFile; fileRef = 5213135E3D114AEC972FFBC2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.h */; };
+		7E49B9A2407C48BFB4CD58A1 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = CC82A45E38FD478BBDF7973C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_window.m */; };
+		7E65266640A84C82B3868323 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.cpp */ = {isa = PBXBuildFile; fileRef = A2D52BDB5DAD4A66AE3ADF58 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.cpp */; };
+		7F58305A37744B6CB7717903 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.cpp */ = {isa = PBXBuildFile; fileRef = DB58D65F9DA847FFA0184ABB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.cpp */; };
+		83095824E25445F993F7F7D4 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.cpp */ = {isa = PBXBuildFile; fileRef = 17C3F54A65C641EC88FC3F5D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.cpp */; };
+		838E962F7C82445A9B243756 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.cpp */ = {isa = PBXBuildFile; fileRef = 8CC32B6F871344E28A60050D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.cpp */; };
+		84D253B158DB4E4EA720E74C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.h */ = {isa = PBXBuildFile; fileRef = 1DC8F21585494FE3986FCAE5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.h */; };
+		86D100EE5275421A8D89FBFD /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.h */ = {isa = PBXBuildFile; fileRef = 4BFED080716A41ECACD570D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.h */; };
+		885C2E8FEAFC47BCA1B4E3AC /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 61135F01ABD3467AB3A84F0E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/CMakeLists.txt */; };
+		89825243BA224C9898F6028C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.h */ = {isa = PBXBuildFile; fileRef = D6D881D8F9E749E7A26CB307 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.h */; };
+		8986597953A44C9E8E3B8C78 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/renderer.h */ = {isa = PBXBuildFile; fileRef = C016703E29F2420C8A3F1055 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/renderer.h */; };
+		8B6BDBCA94164B41B5877739 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/shaderUtils.h */ = {isa = PBXBuildFile; fileRef = A3B2CC9384E74E91A2A2BA7E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/shaderUtils.h */; };
+		9075A01DAB5D4809A7B6D562 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.cpp */ = {isa = PBXBuildFile; fileRef = 173B88A6222447F18F865B91 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.cpp */; };
+		9170F1FAB0514D8EA709A6F4 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.h */ = {isa = PBXBuildFile; fileRef = 455C96E337054CF380348042 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.h */; };
+		91AC65F3CC054D12AB30915D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = C7BA9C7ACF064E19A3018B8E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework */; };
+		94B6938A658848BA9E122F29 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CGL.h */ = {isa = PBXBuildFile; fileRef = C99C0C57BE70436E8BE33A97 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CGL.h */; };
+		9B116321D81149E18253ECC0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.h */ = {isa = PBXBuildFile; fileRef = B31CE82198754E9F97F73F68 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.h */; };
+		9DEC46CEFA7C44A7928F0F0B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.cpp */ = {isa = PBXBuildFile; fileRef = 87872219CB7847218CA69BFC /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.cpp */; };
+		A1C3E3747FCB43A6B89E5BB0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXBuildFile; fileRef = 3AC4B05605FB4861B2E14606 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/visualinfo.c */; };
+		A2BE14A2A78D44649A0C5165 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = E97031B41C3940C58ADD2C1D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.h */; };
+		AC39A47EB378412FAEFDB95F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.h */ = {isa = PBXBuildFile; fileRef = 1DB27F637FB64D40B17DC0B9 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.h */; };
+		AE410F73754D4974A387771B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = AA40A7CCC2C94C17A97B8D7A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/init.c */; };
+		AFF988EEDA854421B496532F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.h */ = {isa = PBXBuildFile; fileRef = 6A9D11956E3F4E8182A42E0C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.h */; };
+		B0A20FF00942452FA6EE4F5A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/mach_time.c */ = {isa = PBXBuildFile; fileRef = 9D016EB407A848C198C8089B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/mach_time.c */; };
+		B36753CBED794445A77C7763 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdfont.cpp */ = {isa = PBXBuildFile; fileRef = 7F47BC189402486A8A83BCED /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdfont.cpp */; };
+		B5901255F6FF45A8BF006FDB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FF7A07E3F4A34034907739FB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/CMakeLists.txt */; };
+		B8930379B53A418BA647892D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = 443C8F029966400EAAD4615C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.c */; };
+		BA6AD65C5B7F45B7BD8354A3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = 4A5779E5311142E181BC2F2A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/context.c */; };
+		BA898A002BBE4275A0578962 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXBuildFile; fileRef = 6551186E042548E3840D9BEA /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/IOKit.framework */; };
+		C13D9D81AA604BD0AEE39A11 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.h */ = {isa = PBXBuildFile; fileRef = 3FB4412216F04F9088069F8D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.h */; };
+		C1B3F2FB5C1E4C9794C1A726 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.h */ = {isa = PBXBuildFile; fileRef = 0250D950F2F14C9EADFE1242 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.h */; };
+		C564BE6018AD443EA5146D79 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = E6B9D8CDEF4746AE92E4A6C0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_init.m */; };
+		C5BD2738A8DE41AA97C07631 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 71D0E321D2384A158FE0151F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CMakeLists.txt */; };
+		CAD04391F2BA44609F66C9EE /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.cpp */ = {isa = PBXBuildFile; fileRef = 373F3FA5E92E4B03B14FB0F3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.cpp */; };
+		CC6E67DEE7A24C5DBFC926EB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.m */ = {isa = PBXBuildFile; fileRef = 6F235CA22FB44561B967777D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.m */; };
+		D184BD60BD084B13B818111C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.h */ = {isa = PBXBuildFile; fileRef = BDBF5E3EF4FF448BAD35E064 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.h */; };
+		D7EEE18D381E47478D2DC7A7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.cpp */ = {isa = PBXBuildFile; fileRef = 51478C3F4E0040B29FD7B470 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.cpp */; };
+		D971C842D3CA469BB75586A7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 046EB65134E943D388968FB5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/input.c */; };
+		DA5CA92D47AA48DC970C1B09 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.cpp */ = {isa = PBXBuildFile; fileRef = 99E61CB001A54AF98E038E30 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.cpp */; };
+		DD595A4723F340998B2DCE76 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = D5B9B334E69547E6A4AEBB91 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.m */; };
+		E90FF1892D8B410C91CC2CB2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.h */ = {isa = PBXBuildFile; fileRef = 39D58D81B5084E8A91AF56C2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.h */; };
+		E93E16ABF316427298C5A06A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mergeVertices.h */ = {isa = PBXBuildFile; fileRef = 68F97458C5BA40789389A231 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mergeVertices.h */; };
+		F169CFE10FCE4CD2A6A315AD /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 794BB476CEDF4AED9F415C80 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_platform.h */; };
+		F418AFBC9EB841BCA381B84C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = 06FAD4C763CC4C49B1EB4955 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.cpp */; };
+		F435940EF26C44D899E10F60 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 7BA97FF67D694FBE8325FE65 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/monitor.c */; };
+		F68CDAA9698B40C2A63D92D7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = F53E01DD93DB4A68A9732631 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0ABA03C5046A470BBCE9386D /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3DA36FFF0F3E4B338C16AE21 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		89865C7EBB344C3D910B53BB /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		C4EB252B02514AD4B7143400 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0E6661409A8748E9A2CB37C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D16ADEDB94DA4F249E277F0B;
+			remoteInfo = CGL;
+		};
+		19D361C81A6A4C3F9B3FFE68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB12C6496FE34D6688DF4AAC;
+			remoteInfo = glew;
+		};
+		36D30734DF96484299FB64B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB12C6496FE34D6688DF4AAC;
+			remoteInfo = glew;
+		};
+		4090F9E46C8C419BBDCB394D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14862AFF04D44CAB5DCC774;
+			remoteInfo = glfw;
+		};
+		82F7E7FA7095403E8AE8E87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D16ADEDB94DA4F249E277F0B;
+			remoteInfo = CGL;
+		};
+		897A6601ABBD4E588919CF6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14862AFF04D44CAB5DCC774;
+			remoteInfo = glfw;
+		};
+		8A830AA7EECB4E3CA39B405D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 893F69EC9A814C759B07B341;
+			remoteInfo = ZERO_CHECK;
+		};
+		8B12974C173C40F58616CF57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB12C6496FE34D6688DF4AAC;
+			remoteInfo = glew;
+		};
+		9913827D5CEF4B78AE9F0AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23E866D834994C548CE8AD5E;
+			remoteInfo = meshedit;
+		};
+		EA7D727769244318A983F0A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E89F70C2C014CABB4D4415D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C56F5DC3F8041CD9A6675BF;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007465B40E0649BEAB35268E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = CGL/deps/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		0108C23ACD594BC5907A6C1A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada.h; path = src/collada.h; sourceTree = SOURCE_ROOT; };
+		0250D950F2F14C9EADFE1242 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector4D.h; path = CGL/src/vector4D.h; sourceTree = SOURCE_ROOT; };
+		046EB65134E943D388968FB5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = CGL/deps/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		06FAD4C763CC4C49B1EB4955 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = CGL/src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		08095D6C6EA9410B99AB89CD /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		0B901270917649088C200B9E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = CGL/src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		1234AA4763384971936C93E0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = png.h; path = src/png.h; sourceTree = SOURCE_ROOT; };
+		16CA5C87A493423C81FBF2A6 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = CGL/deps/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		173B88A6222447F18F865B91 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = CGL/src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		17C3F54A65C641EC88FC3F5D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bezierCurve.cpp; path = src/bezierCurve.cpp; sourceTree = SOURCE_ROOT; };
+		1CD0278F02024A7C832150D0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = CGL/deps/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		1DB27F637FB64D40B17DC0B9 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osdtext.h; path = CGL/src/osdtext.h; sourceTree = SOURCE_ROOT; };
+		1DC8F21585494FE3986FCAE5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfEdgeMesh.h; path = src/halfEdgeMesh.h; sourceTree = SOURCE_ROOT; };
+		30A7622BB976455EA7F66409 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/scene.cpp; sourceTree = SOURCE_ROOT; };
+		352B784B4BC44396877B71D9 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = CGL/src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+		355510108C1749A5A3A789C8 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		373F3FA5E92E4B03B14FB0F3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = CGL/src/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		39D58D81B5084E8A91AF56C2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = CGL/deps/glfw/src/iokit_joystick.h; sourceTree = SOURCE_ROOT; };
+		3A447937EC6849ECB6BCEFC7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector3D.h; path = CGL/src/vector3D.h; sourceTree = SOURCE_ROOT; };
+		3AC4B05605FB4861B2E14606 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = visualinfo.c; path = CGL/deps/glew/src/visualinfo.c; sourceTree = SOURCE_ROOT; };
+		3D7B6D1D0184406EA720F797 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix4x4.h; path = CGL/src/matrix4x4.h; sourceTree = SOURCE_ROOT; };
+		3FB4412216F04F9088069F8D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshEdit.h; path = src/meshEdit.h; sourceTree = SOURCE_ROOT; };
+		413EFC7F393C4273BC65BBA0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = CGL/src/color.cpp; sourceTree = SOURCE_ROOT; };
+		443C8F029966400EAAD4615C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = CGL/deps/glfw/src/posix_tls.c; sourceTree = SOURCE_ROOT; };
+		455C96E337054CF380348042 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene.h; sourceTree = SOURCE_ROOT; };
+		4753D75660C9483A9EEEF705 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = CGL/deps/glew/src/glew.c; sourceTree = SOURCE_ROOT; };
+		489F702F81674C459DED1435 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		4A5779E5311142E181BC2F2A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = CGL/deps/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		4B26577103084B9CAC1167C4 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light.h; path = src/light.h; sourceTree = SOURCE_ROOT; };
+		4BFED080716A41ECACD570D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = quaternion.h; path = CGL/src/quaternion.h; sourceTree = SOURCE_ROOT; };
+		51478C3F4E0040B29FD7B470 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bezierPatch.cpp; path = src/bezierPatch.cpp; sourceTree = SOURCE_ROOT; };
+		5213135E3D114AEC972FFBC2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix3x3.h; path = CGL/src/matrix3x3.h; sourceTree = SOURCE_ROOT; };
+		5281599BCC16449280B7925E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/mesh.h; sourceTree = SOURCE_ROOT; };
+		5348EB7E44704675B7F0C40B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5709EACC5E5B43CEBB55B054 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = student_code.h; path = src/student_code.h; sourceTree = SOURCE_ROOT; };
+		57F020BAA4FE479FB1928563 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5874A5CCD58043DEA2744C0A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = CGL/src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+		601A83167F2A460182A3DEC8 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		605C3C697EE94FB3A34AA703 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector2D.h; path = CGL/src/vector2D.h; sourceTree = SOURCE_ROOT; };
+		61135F01ABD3467AB3A84F0E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		61BB2BCEB9D14CBC954CF491 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = CGL/deps/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		6551186E042548E3840D9BEA /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		68F97458C5BA40789389A231 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mergeVertices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mergeVertices.h; path = src/mergeVertices.h; sourceTree = SOURCE_ROOT; };
+		6A9D11956E3F4E8182A42E0C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bezierCurve.h; path = src/bezierCurve.h; sourceTree = SOURCE_ROOT; };
+		6F235CA22FB44561B967777D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = CGL/deps/glfw/src/iokit_joystick.m; sourceTree = SOURCE_ROOT; };
+		70BA189410444262A5113142 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = CGL/src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		71B39F299ADF4D079CE82D41 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = color.h; path = CGL/src/color.h; sourceTree = SOURCE_ROOT; };
+		71D0E321D2384A158FE0151F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		759E0DFC932042D6B85F01D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material.h; path = src/material.h; sourceTree = SOURCE_ROOT; };
+		75F5067D20924B52974A5DA3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = CGL/src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		794BB476CEDF4AED9F415C80 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = CGL/deps/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		7BA97FF67D694FBE8325FE65 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = CGL/deps/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		7F47BC189402486A8A83BCED /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdfont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdfont.cpp; path = CGL/src/osdfont.cpp; sourceTree = SOURCE_ROOT; };
+		7F7A865C02AC4FB2A3E8E06B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
+		87872219CB7847218CA69BFC /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = student_code.cpp; path = src/student_code.cpp; sourceTree = SOURCE_ROOT; };
+		8A7A9AAC47DC446EAF1BA8A5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tinyxml2.h; path = CGL/src/tinyxml2.h; sourceTree = SOURCE_ROOT; };
+		8CC32B6F871344E28A60050D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdtext.cpp; path = CGL/src/osdtext.cpp; sourceTree = SOURCE_ROOT; };
+		8EBD125723214E9A875DBF1A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = xcode/CGL/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		93018952431F49EAA2301728 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = texture.h; path = src/texture.h; sourceTree = SOURCE_ROOT; };
+		99E61CB001A54AF98E038E30 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = CGL/src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		9D016EB407A848C198C8089B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = CGL/deps/glfw/src/mach_time.c; sourceTree = SOURCE_ROOT; };
+		A0DC03F368544256ACBA856A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = collada.cpp; path = src/collada.cpp; sourceTree = SOURCE_ROOT; };
+		A2D52BDB5DAD4A66AE3ADF58 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = src/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		A3B2CC9384E74E91A2A2BA7E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/shaderUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shaderUtils.h; path = src/shaderUtils.h; sourceTree = SOURCE_ROOT; };
+		A40BBB43C52748D3BB9677B8 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		A4F169F2E0A44239ACFB23BD /* meshedit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = meshedit; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F17476895249BD84855A3E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halfEdgeMesh.cpp; path = src/halfEdgeMesh.cpp; sourceTree = SOURCE_ROOT; };
+		AA40A7CCC2C94C17A97B8D7A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = CGL/deps/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		AC0AF13A5CCA480EA93A17BB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = CGL/src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		B31CE82198754E9F97F73F68 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/camera.h; sourceTree = SOURCE_ROOT; };
+		B9A1B6450A8A431BB8BC58EC /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material.cpp; path = src/material.cpp; sourceTree = SOURCE_ROOT; };
+		BDBF5E3EF4FF448BAD35E064 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base64.h; path = CGL/src/base64.h; sourceTree = SOURCE_ROOT; };
+		C016703E29F2420C8A3F1055 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = renderer.h; path = CGL/src/renderer.h; sourceTree = SOURCE_ROOT; };
+		C10B4D7C82974F19893A1697 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = CGL/deps/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		C500347227DE4924BE6BE717 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light.cpp; path = src/light.cpp; sourceTree = SOURCE_ROOT; };
+		C7BA9C7ACF064E19A3018B8E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		C99C0C57BE70436E8BE33A97 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CGL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CGL.h; path = CGL/src/CGL.h; sourceTree = SOURCE_ROOT; };
+		CC82A45E38FD478BBDF7973C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = CGL/deps/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		D5B9B334E69547E6A4AEBB91 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = CGL/deps/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		D6D881D8F9E749E7A26CB307 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bezierPatch.h; path = src/bezierPatch.h; sourceTree = SOURCE_ROOT; };
+		DADD45639B0A45BE860D0651 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DB58D65F9DA847FFA0184ABB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = png.cpp; path = src/png.cpp; sourceTree = SOURCE_ROOT; };
+		E1135421D90E4291A0EB53D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glewinfo.c; path = CGL/deps/glew/src/glewinfo.c; sourceTree = SOURCE_ROOT; };
+		E141D57730A1417DA8AF2D88 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = complex.h; path = CGL/src/complex.h; sourceTree = SOURCE_ROOT; };
+		E6B9D8CDEF4746AE92E4A6C0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = CGL/deps/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		E7B3832BFC73441DB1197EEC /* glew */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95AD1436FE947B9A8966A80 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meshEdit.cpp; path = src/meshEdit.cpp; sourceTree = SOURCE_ROOT; };
+		E97031B41C3940C58ADD2C1D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = CGL/deps/glfw/src/posix_tls.h; sourceTree = SOURCE_ROOT; };
+		E9CB708ADC0548A0B3E7BE76 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = viewer.h; path = CGL/src/viewer.h; sourceTree = SOURCE_ROOT; };
+		F53E01DD93DB4A68A9732631 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = CGL/deps/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		F55B12AF662B49DD901A3CED /* CGL */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE58085750A54216B278917A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = src/texture.cpp; sourceTree = SOURCE_ROOT; };
+		FF7A07E3F4A34034907739FB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11F22FD3A25B41B99FFE80D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA0FA1E899042F080EEA20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E1AC402B2E47079E1D184D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE2C6E65C74748EC84683270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068957C2B88B4F4390A1FDD0 = {
+			isa = PBXGroup;
+			children = (
+				7927FB8A233A4846AF546496 /* ALL_BUILD */,
+				D24CAFD3CD69442AA71B8AAE /* glew */,
+				DE2F88A95C45400294D431C0 /* uninstall */,
+				6DC4DD1489AC4ADD9CD4C29B /* GLFW3 */,
+				11041AF38C154F659B7FD14E /* CGL */,
+				C863C06408B949C49B7DAC5C /* meshedit */,
+				122C535FF6E4411A8F48299C /* Products */,
+				AC7958A7D9314B168E4F2776 /* Frameworks */,
+				529DC6BAD69B4450A3B2B0EC /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		0B73F04C8E4F498AAAA8D04B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				70BA189410444262A5113142 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.cpp */,
+				413EFC7F393C4273BC65BBA0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.cpp */,
+				173B88A6222447F18F865B91 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.cpp */,
+				352B784B4BC44396877B71D9 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.cpp */,
+				5874A5CCD58043DEA2744C0A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.cpp */,
+				7F47BC189402486A8A83BCED /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdfont.cpp */,
+				8CC32B6F871344E28A60050D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.cpp */,
+				06FAD4C763CC4C49B1EB4955 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.cpp */,
+				75F5067D20924B52974A5DA3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.cpp */,
+				0B901270917649088C200B9E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.cpp */,
+				AC0AF13A5CCA480EA93A17BB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.cpp */,
+				99E61CB001A54AF98E038E30 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.cpp */,
+				373F3FA5E92E4B03B14FB0F3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		11041AF38C154F659B7FD14E /* CGL */ = {
+			isa = PBXGroup;
+			children = (
+				0B73F04C8E4F498AAAA8D04B /* Source Files */,
+				93FF998A307E4103BE4DB4C6 /* Header Files */,
+				71D0E321D2384A158FE0151F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CMakeLists.txt */,
+			);
+			name = CGL;
+			sourceTree = "<group>";
+		};
+		122C535FF6E4411A8F48299C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F55B12AF662B49DD901A3CED /* CGL */,
+				E7B3832BFC73441DB1197EEC /* glew */,
+				57F020BAA4FE479FB1928563 /* glfw */,
+				A4F169F2E0A44239ACFB23BD /* meshedit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2075DDB15C0E4D769A05BC9E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		529DC6BAD69B4450A3B2B0EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		58E56663202640B485E09EE9 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				7AE6FCF746BD450A977F5EEA /* Source Files */,
+				80696AD430964266ABEA7087 /* Header Files */,
+				FF7A07E3F4A34034907739FB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		6CC125F0CCEC45EA9FE44064 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4753D75660C9483A9EEEF705 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glew.c */,
+				E1135421D90E4291A0EB53D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glewinfo.c */,
+				3AC4B05605FB4861B2E14606 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/visualinfo.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6DC4DD1489AC4ADD9CD4C29B /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				58E56663202640B485E09EE9 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		7927FB8A233A4846AF546496 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				7E87B09550694A52958D0698 /* CMake Rules */,
+				5348EB7E44704675B7F0C40B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		7AE6FCF746BD450A977F5EEA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6B9D8CDEF4746AE92E4A6C0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_init.m */,
+				C10B4D7C82974F19893A1697 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_monitor.m */,
+				CC82A45E38FD478BBDF7973C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_window.m */,
+				4A5779E5311142E181BC2F2A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/context.c */,
+				AA40A7CCC2C94C17A97B8D7A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/init.c */,
+				046EB65134E943D388968FB5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/input.c */,
+				6F235CA22FB44561B967777D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.m */,
+				9D016EB407A848C198C8089B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/mach_time.c */,
+				7BA97FF67D694FBE8325FE65 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/monitor.c */,
+				D5B9B334E69547E6A4AEBB91 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.m */,
+				443C8F029966400EAAD4615C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.c */,
+				61BB2BCEB9D14CBC954CF491 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7E87B09550694A52958D0698 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		80696AD430964266ABEA7087 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53E01DD93DB4A68A9732631 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3.h */,
+				16CA5C87A493423C81FBF2A6 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/include/GLFW/glfw3native.h */,
+				794BB476CEDF4AED9F415C80 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_platform.h */,
+				1CD0278F02024A7C832150D0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/internal.h */,
+				39D58D81B5084E8A91AF56C2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.h */,
+				007465B40E0649BEAB35268E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.h */,
+				E97031B41C3940C58ADD2C1D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.h */,
+				8EBD125723214E9A875DBF1A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		93FF998A307E4103BE4DB4C6 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				C99C0C57BE70436E8BE33A97 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/CGL.h */,
+				BDBF5E3EF4FF448BAD35E064 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.h */,
+				71B39F299ADF4D079CE82D41 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.h */,
+				E141D57730A1417DA8AF2D88 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.h */,
+				5213135E3D114AEC972FFBC2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.h */,
+				3D7B6D1D0184406EA720F797 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.h */,
+				1DB27F637FB64D40B17DC0B9 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.h */,
+				4BFED080716A41ECACD570D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.h */,
+				C016703E29F2420C8A3F1055 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/renderer.h */,
+				8A7A9AAC47DC446EAF1BA8A5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.h */,
+				605C3C697EE94FB3A34AA703 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.h */,
+				3A447937EC6849ECB6BCEFC7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.h */,
+				0250D950F2F14C9EADFE1242 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.h */,
+				E9CB708ADC0548A0B3E7BE76 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		AC7958A7D9314B168E4F2776 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				601A83167F2A460182A3DEC8 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Cocoa.framework */,
+				C7BA9C7ACF064E19A3018B8E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework */,
+				6551186E042548E3840D9BEA /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/IOKit.framework */,
+				489F702F81674C459DED1435 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework */,
+				08095D6C6EA9410B99AB89CD /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5B752B1BA654E97B5FCCE7D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				17C3F54A65C641EC88FC3F5D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.cpp */,
+				51478C3F4E0040B29FD7B470 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.cpp */,
+				7F7A865C02AC4FB2A3E8E06B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.cpp */,
+				A0DC03F368544256ACBA856A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.cpp */,
+				A6F17476895249BD84855A3E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.cpp */,
+				C500347227DE4924BE6BE717 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.cpp */,
+				A40BBB43C52748D3BB9677B8 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/main.cpp */,
+				B9A1B6450A8A431BB8BC58EC /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.cpp */,
+				A2D52BDB5DAD4A66AE3ADF58 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.cpp */,
+				E95AD1436FE947B9A8966A80 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.cpp */,
+				DB58D65F9DA847FFA0184ABB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.cpp */,
+				30A7622BB976455EA7F66409 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.cpp */,
+				87872219CB7847218CA69BFC /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.cpp */,
+				FE58085750A54216B278917A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C863C06408B949C49B7DAC5C /* meshedit */ = {
+			isa = PBXGroup;
+			children = (
+				B5B752B1BA654E97B5FCCE7D /* Source Files */,
+				E1AB2AD1CBFA4D759DB31609 /* Header Files */,
+				61135F01ABD3467AB3A84F0E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/CMakeLists.txt */,
+			);
+			name = meshedit;
+			sourceTree = "<group>";
+		};
+		D24CAFD3CD69442AA71B8AAE /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				6CC125F0CCEC45EA9FE44064 /* Source Files */,
+				DADD45639B0A45BE860D0651 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		DE2F88A95C45400294D431C0 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				2075DDB15C0E4D769A05BC9E /* CMake Rules */,
+				355510108C1749A5A3A789C8 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		E1AB2AD1CBFA4D759DB31609 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A9D11956E3F4E8182A42E0C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.h */,
+				D6D881D8F9E749E7A26CB307 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.h */,
+				B31CE82198754E9F97F73F68 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.h */,
+				0108C23ACD594BC5907A6C1A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.h */,
+				1DC8F21585494FE3986FCAE5 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.h */,
+				4B26577103084B9CAC1167C4 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.h */,
+				759E0DFC932042D6B85F01D2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.h */,
+				68F97458C5BA40789389A231 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mergeVertices.h */,
+				5281599BCC16449280B7925E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.h */,
+				3FB4412216F04F9088069F8D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.h */,
+				1234AA4763384971936C93E0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.h */,
+				455C96E337054CF380348042 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.h */,
+				A3B2CC9384E74E91A2A2BA7E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/shaderUtils.h */,
+				5709EACC5E5B43CEBB55B054 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.h */,
+				93018952431F49EAA2301728 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23E866D834994C548CE8AD5E /* meshedit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89640CA4D7974295910A4C54 /* Build configuration list for PBXNativeTarget "meshedit" */;
+			buildPhases = (
+				8701C0FA6595422EB525B882 /* Sources */,
+				B4E1AC402B2E47079E1D184D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F4E21C12662462AB33C4E7F /* PBXTargetDependency */,
+				654B757740A84ED9B5788F1C /* PBXTargetDependency */,
+				D139F73A31304C10ACBE0ABC /* PBXTargetDependency */,
+			);
+			name = meshedit;
+			productName = meshedit;
+			productReference = A4F169F2E0A44239ACFB23BD /* meshedit */;
+			productType = "com.apple.product-type.tool";
+		};
+		D14862AFF04D44CAB5DCC774 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF394DA4B1034B3484656DA7 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				8B07B79EC31D4DB4B5873A92 /* Sources */,
+				8CA0FA1E899042F080EEA20B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 57F020BAA4FE479FB1928563 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D16ADEDB94DA4F249E277F0B /* CGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5A077459E064F9EA26B95AE /* Build configuration list for PBXNativeTarget "CGL" */;
+			buildPhases = (
+				D70872C0F56D419D8EFF4583 /* Sources */,
+				DE2C6E65C74748EC84683270 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				244D116A7D864DA7A39FC925 /* PBXTargetDependency */,
+			);
+			name = CGL;
+			productName = CGL;
+			productReference = F55B12AF662B49DD901A3CED /* CGL */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB12C6496FE34D6688DF4AAC /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5316AE6D0428427C8C80834F /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				9BDCDC0A90CA480FB460E8E4 /* Sources */,
+				11F22FD3A25B41B99FFE80D3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = E7B3832BFC73441DB1197EEC /* glew */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E89F70C2C014CABB4D4415D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1530;
+			};
+			buildConfigurationList = 5C6BB0467E8C41708E4F25CC /* Build configuration list for PBXProject "ColladaViewer" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				0ABA03C5046A470BBCE9386D /* Debug */,
+				3DA36FFF0F3E4B338C16AE21 /* Release */,
+				89865C7EBB344C3D910B53BB /* MinSizeRel */,
+				C4EB252B02514AD4B7143400 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 068957C2B88B4F4390A1FDD0;
+			projectDirPath = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2";
+			projectRoot = "";
+			targets = (
+				1C56F5DC3F8041CD9A6675BF /* ALL_BUILD */,
+				D16ADEDB94DA4F249E277F0B /* CGL */,
+				893F69EC9A814C759B07B341 /* ZERO_CHECK */,
+				DB12C6496FE34D6688DF4AAC /* glew */,
+				D14862AFF04D44CAB5DCC774 /* glfw */,
+				74CC3BC11AB44290A19AB700 /* install */,
+				23E866D834994C548CE8AD5E /* meshedit */,
+				F88210E1D39D47F7BBEA9121 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3C8B9B9628600475EB03CBF8 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B3787E44D7CBA95DC1DA2051 /* Generate CGL/deps/glfw/CMakeFiles/uninstall */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CGL/deps/glfw/CMakeFiles/uninstall";
+			outputPaths = (
+"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/CMakeFiles/uninstall"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -P /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -P /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -P /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw\"
+  /usr/local/Cellar/cmake/3.28.3/bin/cmake -P /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		BD9B62B888FE10B29A5036D7 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		DE853A0660C6A17320892410 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  make -f /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  make -f /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  make -f /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd \"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode\"
+  make -f /Users/dylanrosario/Documents/Spring\\ 2024/CS\\ 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8701C0FA6595422EB525B882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83095824E25445F993F7F7D4 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierCurve.cpp */,
+				D7EEE18D381E47478D2DC7A7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/bezierPatch.cpp */,
+				44CE96AACDCD4B46ABA920D0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/camera.cpp */,
+				742A30EB72774DBC86462D70 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/collada.cpp */,
+				4283551010EE460683532E5B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/halfEdgeMesh.cpp */,
+				5317927DF0A84C6E92A25585 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/light.cpp */,
+				5707483FD44B40A59AD2364F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/main.cpp */,
+				2A585BF22D254D24AE1BCE35 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/material.cpp */,
+				7E65266640A84C82B3868323 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/mesh.cpp */,
+				4F53D57767614425A8F314C2 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/meshEdit.cpp */,
+				7F58305A37744B6CB7717903 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/png.cpp */,
+				4EA05C1F88674E768ABACE27 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/scene.cpp */,
+				9DEC46CEFA7C44A7928F0F0B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/student_code.cpp */,
+				6CB6D8542D3A4A69A4A37DB3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/src/texture.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B07B79EC31D4DB4B5873A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C564BE6018AD443EA5146D79 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_init.m */,
+				3EEC198B4A134C12B19F5384 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_monitor.m */,
+				7E49B9A2407C48BFB4CD58A1 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/cocoa_window.m */,
+				BA6AD65C5B7F45B7BD8354A3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/context.c */,
+				AE410F73754D4974A387771B /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/init.c */,
+				D971C842D3CA469BB75586A7 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/input.c */,
+				CC6E67DEE7A24C5DBFC926EB /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/iokit_joystick.m */,
+				B0A20FF00942452FA6EE4F5A /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/mach_time.c */,
+				F435940EF26C44D899E10F60 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/monitor.c */,
+				DD595A4723F340998B2DCE76 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/nsgl_context.m */,
+				B8930379B53A418BA647892D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/posix_tls.c */,
+				6727FA9AB555405DBC051526 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDCDC0A90CA480FB460E8E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EDA0B52B054057A9EBD2B3 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glew.c */,
+				1112D9F50EE24F66AFE7B2BD /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/glewinfo.c */,
+				A1C3E3747FCB43A6B89E5BB0 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/src/visualinfo.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70872C0F56D419D8EFF4583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3DD9D6782416BA7BA252D /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/base64.cpp */,
+				1FF806E2083344499F265BB8 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/color.cpp */,
+				9075A01DAB5D4809A7B6D562 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/complex.cpp */,
+				31394DF405C441EC8E0112C6 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix3x3.cpp */,
+				5D723825A4F747D9967B3810 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/matrix4x4.cpp */,
+				B36753CBED794445A77C7763 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdfont.cpp */,
+				838E962F7C82445A9B243756 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/osdtext.cpp */,
+				F418AFBC9EB841BCA381B84C /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/quaternion.cpp */,
+				3E9406AA1A604188B870A68F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/tinyxml2.cpp */,
+				5B09C567D62A40278A48858F /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector2D.cpp */,
+				18FB0EB72B594BC59FA7878E /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector3D.cpp */,
+				DA5CA92D47AA48DC970C1B09 /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/vector4D.cpp */,
+				CAD04391F2BA44609F66C9EE /* /Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src/viewer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02BA6BFA8ACC4203B0884167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D16ADEDB94DA4F249E277F0B /* CGL */;
+			targetProxy = 0E6661409A8748E9A2CB37C3 /* PBXContainerItemProxy */;
+		};
+		052134EEAF5A4C83A5C96B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C56F5DC3F8041CD9A6675BF /* ALL_BUILD */;
+			targetProxy = EA7D727769244318A983F0A1 /* PBXContainerItemProxy */;
+		};
+		244D116A7D864DA7A39FC925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB12C6496FE34D6688DF4AAC /* glew */;
+			targetProxy = 36D30734DF96484299FB64B6 /* PBXContainerItemProxy */;
+		};
+		4FF33862B3AF4CC7B17BABEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14862AFF04D44CAB5DCC774 /* glfw */;
+			targetProxy = 4090F9E46C8C419BBDCB394D /* PBXContainerItemProxy */;
+		};
+		52FF8F4B2BEF43688B403F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB12C6496FE34D6688DF4AAC /* glew */;
+			targetProxy = 8B12974C173C40F58616CF57 /* PBXContainerItemProxy */;
+		};
+		654B757740A84ED9B5788F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14862AFF04D44CAB5DCC774 /* glfw */;
+			targetProxy = 897A6601ABBD4E588919CF6C /* PBXContainerItemProxy */;
+		};
+		8F4E21C12662462AB33C4E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB12C6496FE34D6688DF4AAC /* glew */;
+			targetProxy = 19D361C81A6A4C3F9B3FFE68 /* PBXContainerItemProxy */;
+		};
+		B8C7F4041A1444FC81EA1B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23E866D834994C548CE8AD5E /* meshedit */;
+			targetProxy = 9913827D5CEF4B78AE9F0AD1 /* PBXContainerItemProxy */;
+		};
+		D139F73A31304C10ACBE0ABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D16ADEDB94DA4F249E277F0B /* CGL */;
+			targetProxy = 82F7E7FA7095403E8AE8E87E /* PBXContainerItemProxy */;
+		};
+		DB47FF85C7B443149BA3F7F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 893F69EC9A814C759B07B341 /* ZERO_CHECK */;
+			targetProxy = 8A830AA7EECB4E3CA39B405D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		007E925F58724BB8AC787AD2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		01D3DCFC8F4544F681859398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SYMROOT = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build";
+			};
+			name = Debug;
+		};
+		02A1D644E9D94AEAB50B6F40 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		2183817B2EAF49849D1501F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		29B2DC33238C4D8CB58D584E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2E0DA3856B924443B4972EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2EE6AA768B1A4C20AD11A27A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		31E783418EE14EDEBD0E35D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		35319A4409E546F1AB236B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"",/usr/local/include/freetype2,"\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		456BE87D0638401EAD29D29E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		4875D12F63784A86AC772932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4DE3FB390EA34B7B89C7E52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build";
+			};
+			name = Release;
+		};
+		4F88688EEAF74C3FB4967921 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		50A73B53A5DF40A5A9154C8B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/RelWithDebInfo/libCGL.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/RelWithDebInfo/libglew.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/RelWithDebInfo/libglfw3.a\"","-framework Cocoa","-framework OpenGL","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","-framework OpenGL","-framework OpenGL",/usr/local/lib/libfreetype.dylib,"-framework IOKit","-framework CoreFoundation","-framework CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		602108F7FF5A4F37B5AFDF73 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7245F64AE8F646F4A484B980 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		725A45DCCAC2475BAAA7456F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/Release/libCGL.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/Release/libglew.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/Release/libglfw3.a\"","-framework Cocoa","-framework OpenGL","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","-framework OpenGL","-framework OpenGL",/usr/local/lib/libfreetype.dylib,"-framework IOKit","-framework CoreFoundation","-framework CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		791F8601F5114804B85ADC9A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"",/usr/local/include/freetype2,"\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7D508EF55BD846A28F3613D5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		84A5B27D87E54C1B826974A7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		86CA43B48FB44FC1AF3D9DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		898454C0CF264964A62BE385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A01E6E9D82E34AE5B3C2BC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B740EC7983D243BF94B221B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C4D6F13DA6DD4845801C6F02 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C92DC46B2CAD4D439C298319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CB80097E91974B489E368024 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CBEC3E2857E14015A49CDA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CCCAF127611D4D7F86C79247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DDA62E7FDC9A4228AFBD7C0E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glfw/src\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E21ACBF1C7944E629627BADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/Debug/libCGL.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/Debug/libglew.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/Debug/libglfw3.a\"","-framework Cocoa","-framework OpenGL","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","-framework OpenGL","-framework OpenGL",/usr/local/lib/libfreetype.dylib,"-framework IOKit","-framework CoreFoundation","-framework CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F3911AC0BE6F48EE8ACA5BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"",/usr/local/include/freetype2,"\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F3BC1359CD0441D99F3A2276 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F3F1C8155AEE41ABBBBA3A28 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F42D7318658441BCAB4EC79D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/MinSizeRel/libCGL.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glew/MinSizeRel/libglew.a\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/deps/glfw/src/MinSizeRel/libglfw3.a\"","-framework Cocoa","-framework OpenGL","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","-framework OpenGL","-framework OpenGL",/usr/local/lib/libfreetype.dylib,"-framework IOKit","-framework CoreFoundation","-framework CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FCBFAA9F1E374DCE81678611 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/CGL/src/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/include\"","\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/deps/glew/include\"",/usr/local/include/freetype2,"\"/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/CGL/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/dylanrosario/Documents/Spring 2024/CS 184/Homework/hw2-meshedit-sp24-dylan2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5316AE6D0428427C8C80834F /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E783418EE14EDEBD0E35D4 /* Debug */,
+				4875D12F63784A86AC772932 /* Release */,
+				2EE6AA768B1A4C20AD11A27A /* MinSizeRel */,
+				F3BC1359CD0441D99F3A2276 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5C6BB0467E8C41708E4F25CC /* Build configuration list for PBXProject "ColladaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D3DCFC8F4544F681859398 /* Debug */,
+				4DE3FB390EA34B7B89C7E52D /* Release */,
+				02A1D644E9D94AEAB50B6F40 /* MinSizeRel */,
+				456BE87D0638401EAD29D29E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		761DDF12CE544271BFA6EF4D /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2183817B2EAF49849D1501F2 /* Debug */,
+				CBEC3E2857E14015A49CDA0B /* Release */,
+				4F88688EEAF74C3FB4967921 /* MinSizeRel */,
+				F3F1C8155AEE41ABBBBA3A28 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B17175E92E04CE094BEA537 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01E6E9D82E34AE5B3C2BC9A /* Debug */,
+				2E0DA3856B924443B4972EB2 /* Release */,
+				7D508EF55BD846A28F3613D5 /* MinSizeRel */,
+				CB80097E91974B489E368024 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		89640CA4D7974295910A4C54 /* Build configuration list for PBXNativeTarget "meshedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21ACBF1C7944E629627BADD /* Debug */,
+				725A45DCCAC2475BAAA7456F /* Release */,
+				F42D7318658441BCAB4EC79D /* MinSizeRel */,
+				50A73B53A5DF40A5A9154C8B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BF394DA4B1034B3484656DA7 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B740EC7983D243BF94B221B0 /* Debug */,
+				86CA43B48FB44FC1AF3D9DF1 /* Release */,
+				DDA62E7FDC9A4228AFBD7C0E /* MinSizeRel */,
+				602108F7FF5A4F37B5AFDF73 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D3A7D5508E1847C28A781DBD /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898454C0CF264964A62BE385 /* Debug */,
+				29B2DC33238C4D8CB58D584E /* Release */,
+				7245F64AE8F646F4A484B980 /* MinSizeRel */,
+				84A5B27D87E54C1B826974A7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE3044FAD5214E88A763A737 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCAF127611D4D7F86C79247 /* Debug */,
+				C92DC46B2CAD4D439C298319 /* Release */,
+				007E925F58724BB8AC787AD2 /* MinSizeRel */,
+				C4D6F13DA6DD4845801C6F02 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E5A077459E064F9EA26B95AE /* Build configuration list for PBXNativeTarget "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35319A4409E546F1AB236B47 /* Debug */,
+				F3911AC0BE6F48EE8ACA5BF1 /* Release */,
+				FCBFAA9F1E374DCE81678611 /* MinSizeRel */,
+				791F8601F5114804B85ADC9A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E89F70C2C014CABB4D4415D /* Project object */;
+}
