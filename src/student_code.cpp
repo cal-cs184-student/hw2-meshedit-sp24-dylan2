@@ -240,10 +240,64 @@ namespace CGL
       }
       
       // create new elements
-      HalfedgeIter h10, h11, h12, h13, h14, h15;
-      VertexIter v4;
-      EdgeIter e5, e6, e7;
-      FaceIter f2, f3;
+      HalfedgeIter h10 = newHalfedge();
+      HalfedgeIter h11 = newHalfedge();
+      HalfedgeIter h12 = newHalfedge();
+      HalfedgeIter h13 = newHalfedge();
+      HalfedgeIter h14 = newHalfedge();
+      HalfedgeIter h15 = newHalfedge();
+      
+      VertexIter v4 = newVertex();
+      
+      EdgeIter e5 = newEdge();
+      EdgeIter e6 = newEdge();
+      EdgeIter e7 = newEdge();
+      
+      FaceIter f2 = newFace();
+      FaceIter f3 = newFace();
+      
+      v4->position = (v0->position + v1->position) / 2;
+      v4->halfedge() = h0;
+      
+      // reassign everything, use setNeighbors for halfedges: next, twin, vertex, edge, face
+      // outside half edges should remain same
+      
+      h0->setNeighbors(h1, h3, v4, e0, f0);
+      h1->setNeighbors(h2, h6, v1, e1, f0);
+      h2->setNeighbors(h0, h10, v2, e5, f0);
+      h3->setNeighbors(h4, h0, v1, e0, f1);
+      h4->setNeighbors(h5, h13, v4, e7, f1);
+      h5->setNeighbors(h3, h9, v3, e4, f1);
+      h6->setNeighbors(h6->next(), h1, v2, e1, h6->face());
+      h7->setNeighbors(h7->next(), h11, v0, e2, h7->face());
+      h8->setNeighbors(h8->next(), h15, v3, e3, h8->face());
+      h9->setNeighbors(h9->next(), h5, v1, e4, h9->face());
+      h10->setNeighbors(h11, h2, v4, e5, f2);
+      h11->setNeighbors(h12, h7, v2, e2, f2);
+      h12->setNeighbors(h10, h14, v0, e6, f2);
+      h13->setNeighbors(h14, h4, v3, e7, f3);
+      h14->setNeighbors(h15, h12, v4, e6, f3);
+      h15->setNeighbors(h13, h8, v0, e3, f3);
+      
+      v0->halfedge() = h12;
+      v1->halfedge() = h3;
+      v2->halfedge() = h2;
+      v3->halfedge() = h13;
+      v3->halfedge() = h0;
+      
+      e0->halfedge() = h0;
+      e1->halfedge() = h1;
+      e2->halfedge() = h11;
+      e3->halfedge() = h15;
+      e4->halfedge() = h5;
+      e5->halfedge() = h10;
+      e6->halfedge() = h14;
+      e7->halfedge() = h4;
+      
+      f0->halfedge() = h0;
+      f1->halfedge() = h4;
+      f2->halfedge() = h10;
+      f3->halfedge() = h14;
       
       return e0->halfedge()->vertex();
   }
